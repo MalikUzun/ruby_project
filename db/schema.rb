@@ -10,23 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_14_210423) do
+ActiveRecord::Schema.define(version: 2019_05_15_222855) do
 
-  create_table "faydalars", force: :cascade do |t|
-    t.string "baslik"
+  create_table "oyuns", force: :cascade do |t|
+    t.string "isim"
     t.text "aciklama"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "resim_file_name"
-    t.string "resim_content_type"
-    t.bigint "resim_file_size"
-    t.datetime "resim_updated_at"
-  end
-
-  create_table "uruns", force: :cascade do |t|
-    t.string "baslik"
-    t.text "aciklama"
-    t.integer "fiyat"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "resim_file_name"
